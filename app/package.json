@@ -1,6 +1,6 @@
 {
     "name": "rise-pipeline",
-    "version": "0.0.23",
+    "version": "0.0.24",
     "author": "Gary Jennings @dodgeblaster",
     "bin": {
         "rise-pipeline": "./bin/run"
