@@ -1,0 +1,50 @@
+{
+    "name": "rise-pipeline",
+    "version": "0.0.23",
+    "author": "Gary Jennings @dodgeblaster",
+    "bin": {
+        "rise-pipeline": "./bin/run"
+    },
+    "bugs": "https://github.com/dodgeblaster/rise-pipeline/issues",
+    "devDependencies": {
+        "@oclif/dev-cli": "^1.26.5",
+        "globby": "^10.0.2"
+    },
+    "engines": {
+        "node": ">=12.0.0"
+    },
+    "files": [
+        "/bin",
+        "/npm-shrinkwrap.json",
+        "/oclif.manifest.json",
+        "/src"
+    ],
+    "homepage": "https://github.com/dodgeblaster/rise-pipeline",
+    "keywords": [
+        "oclif"
+    ],
+    "license": "MIT",
+    "main": "src/index.js",
+    "oclif": {
+        "commands": "./src/commands",
+        "bin": "rise-pipeline",
+        "plugins": [
+            "@oclif/plugin-help"
+        ]
+    },
+    "repository": "dodgeblaster/rise-pipeline",
+    "scripts": {
+        "postpack": "rm -f oclif.manifest.json",
+        "prepack": "oclif-dev manifest && oclif-dev readme",
+        "test": "echo NO TESTS",
+        "version": "oclif-dev readme && git add README.md"
+    },
+    "dependencies": {
+        "@oclif/command": "^1.8.7",
+        "@oclif/config": "^1.18.1",
+        "@oclif/plugin-help": "^3.2.10",
+        "aws-sdk": "^2.1043.0",
+        "rise-foundation": "^0.0.27",
+        "riseapp-utils": "^0.0.6"
+    }
+}
